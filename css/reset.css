@@ -1,0 +1,83 @@
+/* recet.css — reset baseado no "modern-css-reset" de Andy Bell
+   https://github.com/hankchizljaw/modern-css-reset (inspirado)
+*/
+
+/* 1. Box sizing mais previsível */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remover margens padrão */
+:where(html, body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd, ul, ol) {
+  margin: 0;
+}
+
+/* 3. Permitir alturas percentuais */
+html, body {
+  height: 100%;
+}
+
+/* 4. Imagens e mídias responsivas */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 5. Remover estilos padrões de listas */
+ol, ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* 6. Melhorar legibilidade de formulários */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* 7. Evitar estouro de texto */
+textarea {
+  resize: vertical;
+}
+
+/* 8. Links sem decoração por padrão (herdar cor) */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* 9. Botões e controles */
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+/* 10. Tabelas */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* 11. Remover sublinhado em imagens roláveis */
+audio, iframe { max-width: 100%; }
+
+/* 12. Foco acessível padrão */
+:focus {
+  outline: 2px solid Highlight;
+  outline-offset: 2px;
+}
+
+/* 13. Evitar que quebre palavras em idiomas curtos */
+html {
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 14. Definir cor de fundo padrão transparent e cor inicial */
+body {
+  background-color: transparent;
+  color: inherit;
+  line-height: 1.5;
+}
